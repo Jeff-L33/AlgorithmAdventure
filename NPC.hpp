@@ -1,18 +1,19 @@
 #ifndef NPC
 #define NPC
-#include <string>
 #include "GameCharacter.hpp"
-#include "Interactable.hpp"
 
-class Npc : public GameCharacter, public Interactable
+class NPc : public GameCharacter
 {
 public:
-	Npc(std::string, int, int);
-	void act() override;
-	void speak() override;
-	void interactWith(GameCharater target) override;
-	void trade(GameCharater target) override;
-	void attack(GameCharater target) override;
+	NPc(std::string, int);
+
+	void interactWith(GameCharacter& character);
+
+	void trade(GameCharacter& character);
+
+	void defend(GameCharacter& character);
+
 };
+
 
 #endif // !NPC
