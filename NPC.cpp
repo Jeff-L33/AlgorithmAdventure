@@ -1,6 +1,6 @@
 #include "NPC.hpp"
 
-NPc::NPc(std::string name, int health) : GameCharacter(name, health, 0)
+NPc::NPc(std::string name, int health) : GameCharacter(name, health, 1)
 {
 	this->name = name;
 	this->health = health;

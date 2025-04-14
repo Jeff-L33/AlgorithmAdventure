@@ -11,7 +11,7 @@ void Village::addNPC(NPc * npc)
 }
 void Village::removeNPC(NPc * npc)
 {
-	// Implementation to remove NPC from the village
+	
 }
 void Village::addHero(Hero * hero)
 {
